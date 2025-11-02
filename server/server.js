@@ -1,7 +1,6 @@
 import express from 'express';
 import cors from 'cors';
 import indexRoutes from '../routes/index.routes.js';
-import personajeRoutes from './routes/personaje.routes.js';
 import * as db from '../db/cnn_mongodb.js';
 
 
