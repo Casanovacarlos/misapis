@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
-import Personaje from '../models/personaje.model.js'; // Asegúrate de tener este modelo creado
+import Personaje from '../models/personaje.model.js'; 
 
-// Obtener todos los personajes
+
 export const getAllPersonajes = async (req, res) => {
   console.log('Obteniendo todos los personajes de One Piece');
   try {
@@ -21,7 +21,7 @@ export const getAllPersonajes = async (req, res) => {
   }
 };
 
-// Obtener personaje por ID
+
 export const getPersonajeById = async (req, res) => {
   console.log('Obteniendo personaje por ID');
   const id = req.params.id;
@@ -49,7 +49,7 @@ export const getPersonajeById = async (req, res) => {
   }
 };
 
-// Crear nuevo personaje
+
 export const postPersonaje = async (req, res) => {
   console.log('POST PERSONAJE');
   const body = req.body;
@@ -77,7 +77,7 @@ export const postPersonaje = async (req, res) => {
   }
 };
 
-// Actualizar personaje
+
 export const putPersonaje = async (req, res) => {
   const id = req.params.id;
   const body = req.body;
@@ -109,7 +109,7 @@ export const putPersonaje = async (req, res) => {
   }
 };
 
-// Eliminar personaje
+
 export const deletePersonaje = async (req, res) => {
   console.log('DELETE PERSONAJE');
   const id = req.params.id;
@@ -137,3 +137,4 @@ export const deletePersonaje = async (req, res) => {
     });
   }
 };
+
