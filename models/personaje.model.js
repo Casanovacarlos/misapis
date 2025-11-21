@@ -14,15 +14,16 @@ const personajeSchema = new mongoose.Schema({
     required: [true, 'La tripulación es obligatoria'],
   },
   poderes: {
-    type: [String], // Ejemplo: ["Gomu Gomu no Mi", "Gear Fifth"]
+    type: [String], 
     default: [],
   },
   haki: {
     tipo: {
-      type: [String], // Ejemplo: ["Kenbunshoku", "Busoshoku", "Haoshoku"]
+      type: [String], 
       default: [],
     },
   },
 });
 
 export default mongoose.model('Personaje', personajeSchema);
+
